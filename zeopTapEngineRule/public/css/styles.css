@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    width: 100%;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div, form label {
+    margin-bottom: 10px;
+}
+
+form input[type="text"], form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+pre {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.rule-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+}
+
+.rule-container label {
+    margin-right: 10px;
+    flex: 1;
+}
+
+#add-rule {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    section {
+        margin: 10px 0;
+    }
+
+    form input[type="text"], form textarea, form select {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    form textarea {
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    form input[type="text"], form textarea, form select {
+        padding: 6px;
+    }
+
+    form button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    form textarea {
+        height: 60px;
+    }
+}
